@@ -8,7 +8,7 @@ export default function CardsCreate({ characters }) {
         {/* la clave por que usamos jsx */}
 
         {characters.map(character => {
-            return <Card name={character.name} status={character.status} species={character.species} image={character.image}></Card>
+            return <Card name={character.name} status={character.status} species={character.species} image={character.image} key={character.id}></Card>
         })}
 
     </div>);

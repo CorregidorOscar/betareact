@@ -1,19 +1,35 @@
-.card {
-  background-color: aquamarine;
-  border-radius: 15px;
-  width: 215px;
+:root {
+  --radio: 15px;
 }
 
+.card {
+  border-radius: var(--radio);
+  width: 200px;
+  height: 300px;
+  background-color: rgb(125 255 212 / 50%);
+  position: relative;
+}
+
+.card:hover {
+  opacity: 1;
+  transform: scale(1.1);
+  transition: 0.2s ease-in;
+  cursor: pointer;
+}
 .container {
   width: 100%;
 }
 
 .imagen {
   width: 100%;
-  border-top-left-radius: 15px;
-  border-top-right-radius: 15px;
+  border-top-left-radius: var(--radio);
+  border-top-right-radius: var(--radio);
 }
 
 .info {
-  padding: 0px 0px 5px 10px;
+  color: white;
+  text-shadow: 0 0 1px #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
+    1px 1px 0 #000;
+  text-align: center;
+  padding: 5px;
 }
